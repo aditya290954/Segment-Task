@@ -29,7 +29,7 @@ const SegmentModal = ({ show, handleClose }) => {
       schema: schemas.map(schema => ({ [schema]: schemaOptions.find(opt => opt.value === schema).label }))
     };
 
-    fetch('/api/https://webhook.site/', {
+    fetch('/api/https://webhook.site/', {                 //api
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
